@@ -1,0 +1,71 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+ <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Gas Rewards Calculator</title>
+  <meta name="description" content="Cub Rewards Gas Calculator">
+  <meta name="author" content="Blake">
+
+  <link rel="stylesheet" href="css/main.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+<link href="css/open-iconic.css" rel="stylesheet">
+</head>
+
+<body>
+
+<div id="headerBar">
+    <span class="oi calculator-icon" data-glyph="calculator"></span>
+    <h4>Cub Rewards Gas Calculator</h4>
+</div>
+<div class="container">
+<div class="row">
+<br/>
+</div>
+<label for="priceOfGas">Cost of gas</label>
+<div class="input-group">
+  <span class="input-group-addon">$</span>
+  <input type="number" value="0.00" class="form-control" id="priceOfGas" onkeyup="CalculateGallons()" aria-label="Amount (to the nearest dollar)">
+</div>
+<label for="cubRewards">Cub rewards amount</label>
+<div class="input-group">
+  <span class="input-group-addon">$</span>
+  <input type="number" value="0.60" class="form-control" id="cubRewards" onkeyup="CalculateGallons()" aria-label="Amount (to the nearest dollar)">
+</div>
+<label for="milesDriven">Miles Driven since last fillup</label>
+<div class="input-group">
+  <span class="input-group-addon">Miles</span>
+  <input type="number" value="220" class="form-control" id="milesDriven" onkeyup="CalculateGallons()" aria-label="Check Trip Miles">
+</div>
+<label for="milesPerGallon">Miles Per Gallon</label>
+<div class="input-group">
+  <span class="input-group-addon">MPG</span>
+  <input type="number" value="29" class="form-control" id="milesPerGallon" onkeyup="CalculateGallons()" aria-label="Estimate (usually 34 in summer)">
+</div>
+
+<br/>
+<br/>
+<div class="row">
+    <div class="col-sm">
+      <i class="material-icons">local_gas_station</i>
+	    <input type="text" id="txtGallons" readonly></input>
+    </div>
+    <div class="col-sm">
+      <i class="material-icons">attach_money</i>
+      <input type="text" id="txtAmountToPay" readonly></input>
+    </div>
+  </div>
+</div>
+
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+	<script src="js/main.js"></script>
+
+</body>
+</html>
+
